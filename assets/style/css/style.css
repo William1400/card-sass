@@ -1,0 +1,96 @@
+footer, main #sec-b, main #sec-a article {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+main #sec-a article h2, main #sec-a article h1, main #sec-a h3 {
+  font-weight: lighter;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E4E4E4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 428px;
+  padding-bottom: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  position: relative;
+}
+header section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  color: white;
+  border-radius: 50%;
+  background-color: #E24E3F;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+main #sec-a h3 {
+  position: absolute;
+  top: -70px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  color: white;
+  background-color: #E24E3F;
+}
+main #sec-a article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: lighter;
+}
+main #sec-a article h1 {
+  font-size: 1.5em;
+}
+main #sec-a article h2 {
+  color: #E24E3F;
+}
+main #sec-b {
+  position: absolute;
+  visibility: hidden;
+}
+
+footer {
+  display: flex;
+  gap: 30px;
+  padding-top: 0px;
+}
+footer section {
+  display: flex;
+  gap: 5px;
+}
