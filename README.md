@@ -9,6 +9,7 @@ I am learning to use sass
 ### General Info
 ***
  copying a web card
+***
  <img src="assets\img\card-sass.gif" alt="My cool logo"/>
 ***
 ### Step One  
