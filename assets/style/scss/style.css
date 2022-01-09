@@ -1,0 +1,123 @@
+main #sec-b, footer, main #sec-a article {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+footer, main #sec-a article {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+main #sec-a article h2, main #sec-a article h1, main #sec-a h3 {
+  font-weight: lighter;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #E4E4E4;
+}
+
+body {
+  transition-property: box-shadow;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 370px;
+}
+body:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+body:hover main {
+  transform: translateY(-60%);
+}
+body:hover header img {
+  transform: scale(1.2);
+  filter: invert(0.2) opacity(0.8);
+}
+
+header {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+header img {
+  width: 100%;
+  transition: transform 1s ease-out, filter 1s ease-out;
+}
+header section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  color: white;
+  border-radius: 50%;
+  background-color: #E24E3F;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  position: relative;
+  background-color: white;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+main #sec-a h3 {
+  position: absolute;
+  bottom: 96%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  color: white;
+  background-color: #E24E3F;
+}
+main #sec-a article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: lighter;
+}
+main #sec-a article h1 {
+  font-size: 1.5em;
+}
+main #sec-a article h2 {
+  color: #E24E3F;
+}
+main #sec-b {
+  position: absolute;
+  top: 100%;
+  color: #55565A;
+}
+
+footer {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  color: #AEAEAE;
+  background-color: white;
+}
+footer section {
+  display: flex;
+  gap: 5px;
+}
